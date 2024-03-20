@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Главная</title>
+</head>
+
+<body class="m-page">
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__inner _flex">
+                    <a href="" class="logo">
+                        <img class="_view1" src="img/logo.svg" alt="">
+                        <img class="_view2" src="img/logo2.svg" alt="">
+                    </a>
+
+                    <button class="burger m-btn-black">
+                        <img class="_view1" src="img/burger.svg" alt="">
+                        <img class="_view2" src="img/close.svg" alt="">
+                    </button>
+
+                    <div class="menu _flex">
+                        <div class="nav _flex">
+                            <a href="" class="nav__link _active"><span>О проекте</span></a>
+                            <a href="" class="nav__link"><span>Методика</span></a>
+                            <a href="" class="nav__link"><span>Результаты проверок</span></a>
+                            <a href="" class="nav__link"><span>Реклама</span></a>
+                            <a href="" class="nav__link"><span>Контакты</span></a>
+                        </div>
+
+                        <button class="menu__btn m-btn m-btn-primary">
+                            <span>+ Добавить компанию</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+        <main class="content">
+
+            <div class="main">
+                <div class="container">
+                    <div class="main__inner">
+                        <div class="main-banner">
+                            <img src="img/main.png" alt="" class="main-banner__img">
+                            <div class="main-banner__content">
+                                <div class="h1">
+                                    Рейтинг компаний печати на одежде
+                                </div>
+                                <div class="main-banner__desc">
+                                    <div class="text20 text15-tablet">
+                                        Мы оцениванием компании на основе нашего алгоритма, популярности материалов, а также по отзывам пользователей об уровне обслуживания и качестве услуг.
+                                    </div>
+                                </div>
+                                <div class="main-banner__nav">
+                                    <a href="" class="main-banner__link m-btn m-btn-white">
+                                        <span>Подробнее об алгоритме</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="banner">
+                            <img src="img/banner.svg" alt="">
+                        </div>
+                        <div class="banner">
+                            <img src="img/banner.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="filter">
+                        <div class="filter__top">
+                            <div class="filter__search fg">
+                                <input type="text" placeholder="Ваше имя">
+                                <img src="img/search.svg" alt="" class="fg__icon">
+                            </div>
+                            <div class="sort">
+                                <div class="filter-group">
+                                    <div class="filter-item">
+                                        <div class="filter-item__show">
+                                            <img src="img/sort.svg" alt="">
+                                            <div class="filter-item__title">
+                                                Сортировка
+                                            </div>
+                                        </div>
+                                        <div class="filter-item__hidden">
+                                            <div class="filter-radio">
+                                                <input type="radio" checked name="sort">
+                                                <label><span>Без сортировки</span></label>
+                                            </div>
+                                            <div class="filter-radio">
+                                                <input type="radio" name="sort">
+                                                <label><span>По названию</span></label>
+                                            </div>
+                                            <div class="filter-radio">
+                                                <input type="radio" name="sort">
+                                                <label><span>По оценкам пользователей</span></label>
+                                            </div>
+                                            <div class="filter-radio">
+                                                <input type="radio" name="sort">
+                                                <label><span>По отзывам</span></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter__bottom">
+                            <div class="filter__title">
+                                <img src="img/filter.svg" alt="">
+                                <span>Фильтры</span>
+                            </div>
+                            <div class="filter__items">
+                                <div class="filter-group">
+                                    <div class="filter-group__title">По видам печати:</div>
+                                    <div class="filter-item">
+                                        <div class="filter-item__show">
+                                            <div class="filter-item__title">
+                                                Выбрать услугу
+                                            </div>
+                                        </div>
+                                        <div class="filter-item__hidden">
+                                            <div class="filter-radio">
+                                                <input type="radio" checked data-id="service1" data-value="Прямая печать" name="service">
+                                                <label><span>Прямая печать</span></label>
+                                            </div>
+                                            <div class="filter-radio">
+                                                <input type="radio" data-id="service2" data-value="Термотрансфер" name="service">
+                                                <label><span>Термотрансфер</span></label>
+                                            </div>
+                                            <div class="filter-radio">
+                                                <input type="radio" data-id="service3" data-value="DTF-печать" name="service">
+                                                <label><span>DTF-печать</span></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="filter-group">
+                                    <div class="filter-group__title">По станциям метро:</div>
+                                    <div class="filter-item">
+                                        <div class="filter-item__show">
+                                            <div class="filter-item__title">
+                                                Найти метро
+                                            </div>
+                                        </div>
+                                        <div class="filter-item__hidden">
+                                            <div class="filter-radio">
+                                                <input type="radio" checked data-id="metro1" data-value="Коптево" name="metro">
+                                                <label><span>Коптево</span></label>
+                                            </div>
+                                            <div class="filter-radio">
+                                                <input type="radio" data-id="metro2" data-value="Пушкинская" name="metro">
+                                                <label><span>Пушкинская</span></label>
+                                            </div>
+                                            <div class="filter-radio">
+                                                <input type="radio" data-id="metro3" data-value="Водный стадион" name="metro">
+                                                <label><span>Водный стадион</span></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="selected-filters">
+                            <div class="selected-filter">
+                                <span class="text14">DTF-печать</span>
+                                <button class="selected-filter__remove">
+                                    <img src="img/close2.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="catalog">
+                        <div class="catalog-card">
+                            <div class="catalog-card__col1">
+
+
+                                <div class="catalog-card__place">
+                                    <div class="catalog-card__place-num">
+                                        1
+                                    </div>
+                                    <div class="catalog-card__place-title text15">
+                                        место
+                                    </div>
+                                </div>
+                                <div class="catalog-card__img">
+                                    <img src="img/logo2.png" alt="">
+                                </div>
+                            </div>
+                            <div class="catalog-card__col2">
+                                <div class="catalog-card__title">
+                                    MOSCOW PRINT STUDIO
+                                </div>
+                                <div class="catalog-card__info _flex">
+                                    <div class="catalog-card__reviews _flex">
+                                        <div class="rating _flex">
+                                            <div class="text14 bold-text">
+                                                Рейтинг:
+                                            </div>
+                                            <img src="img/stars.svg" alt="" class="rating__stars">
+                                            <div class="text14 bold-text">
+                                                4,9
+                                            </div>
+                                        </div>
+                                        <div class="catalog-card__reviews-count">
+                                            <div class="text14 bold-text">
+                                                Отзывов: 102
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="catalog-card__status _flex">
+                                        <div class="status-item">
+                                            <img src="img/status.svg" alt="">
+                                            <span class="text12">Подтвержден</span>
+                                        </div>
+                                        <div class="status-item">
+                                            <img src="img/status2.svg" alt="">
+                                            <span class="text12">Проверен</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="catalog-card__text text">
+                                    <p>Мы печатаем оптом на одежде и текстиле с 2015-го года. Изготавливаем большие объемы продукции в сжатые сроки. У нас много опыта, слаженная команда и собственное печатное производство в Москве. Вам нужна корпоративная или спортивная форма, хотите сделать подарок? Поможем определиться с подходящим методом печати, подготовим макет принта, подберем нужные изделия под нанесение и, при необходимости, изготовим для вас образцы. Сделаем всю работу «под ключ».</p>
+                                    <p>
+                                        <b>Виды одежды:</b> футболки, толстовки, свитшоты, бейсболки, поло, ткани
+                                    </p>
+                                    <p>
+                                        <b>Виды печати:</b> шелкография, термоперенос, сублимация, прямая печать, тампопечать
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="catalog-card__col3">
+                                <div class="catalog-card__items">
+                                    <div class="catalog-card__item">
+                                        <div class="text12 bold-text">
+                                            Станция метро:
+                                        </div>
+                                        <div class="text12">
+                                            Коптево
+                                        </div>
+                                    </div>
+                                    <div class="catalog-card__item">
+                                        <div class="text12 bold-text">
+                                            Адрес:
+                                        </div>
+                                        <div class="text12">
+                                            Москва, Московская обл., Красногорский район, 26-й километр, бизнес-центр Riga Land, корп. 1 (главный офис)
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="catalog-card__nav">
+                                    <a href="" class="catalog-card__btn m-btn m-btn-primary">
+                                        <span>Перейти на сайт</span>
+                                    </a>
+                                    <a href="" class="catalog-card__btn m-btn m-btn-primary-outline">
+                                        <span>Оставить отзыв</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="catalog-card__col4">
+                                <div class="catalog-card__tags">
+                                    <div class="catalog-card__tag">
+                                        <span>Есть пошив</span>
+                                    </div>
+                                    <div class="catalog-card__tag">
+                                        <span>Опт от 10 шт</span>
+                                    </div>
+                                    <div class="catalog-card__tag">
+                                        <span>Бесплатный макет</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="catalog-card">
+                            <div class="catalog-card__col1">
+
+
+                                <div class="catalog-card__place">
+                                    <div class="catalog-card__place-num">
+                                        2
+                                    </div>
+                                    <div class="catalog-card__place-title text15">
+                                        место
+                                    </div>
+                                </div>
+                                <div class="catalog-card__img">
+                                    <img src="img/logo2.png" alt="">
+                                </div>
+                            </div>
+                            <div class="catalog-card__col2">
+                                <div class="catalog-card__title">
+                                    MOSCOW PRINT STUDIO
+                                </div>
+                                <div class="catalog-card__info _flex">
+                                    <div class="catalog-card__reviews _flex">
+                                        <div class="rating _flex">
+                                            <div class="text14 bold-text">
+                                                Рейтинг:
+                                            </div>
+                                            <img src="img/stars.svg" alt="" class="rating__stars">
+                                            <div class="text14 bold-text">
+                                                4,9
+                                            </div>
+                                        </div>
+                                        <div class="catalog-card__reviews-count">
+                                            <div class="text14 bold-text">
+                                                Отзывов: 102
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="catalog-card__status _flex">
+                                        <div class="status-item">
+                                            <img src="img/status.svg" alt="">
+                                            <span class="text12">Подтвержден</span>
+                                        </div>
+                                        <div class="status-item">
+                                            <img src="img/status2.svg" alt="">
+                                            <span class="text12">Проверен</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="catalog-card__text text">
+                                    <p>Мы печатаем оптом на одежде и текстиле с 2015-го года. Изготавливаем большие объемы продукции в сжатые сроки. У нас много опыта, слаженная команда и собственное печатное производство в Москве. Вам нужна корпоративная или спортивная форма, хотите сделать подарок? Поможем определиться с подходящим методом печати, подготовим макет принта, подберем нужные изделия под нанесение и, при необходимости, изготовим для вас образцы. Сделаем всю работу «под ключ».</p>
+                                    <p>
+                                        <b>Виды одежды:</b> футболки, толстовки, свитшоты, бейсболки, поло, ткани
+                                    </p>
+                                    <p>
+                                        <b>Виды печати:</b> шелкография, термоперенос, сублимация, прямая печать, тампопечать
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="catalog-card__col3">
+                                <div class="catalog-card__items">
+                                    <div class="catalog-card__item">
+                                        <div class="text12 bold-text">
+                                            Станция метро:
+                                        </div>
+                                        <div class="text12">
+                                            Коптево
+                                        </div>
+                                    </div>
+                                    <div class="catalog-card__item">
+                                        <div class="text12 bold-text">
+                                            Адрес:
+                                        </div>
+                                        <div class="text12">
+                                            Москва, Московская обл., Красногорский район, 26-й километр, бизнес-центр Riga Land, корп. 1 (главный офис)
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="catalog-card__nav">
+                                    <a href="" class="catalog-card__btn m-btn m-btn-primary">
+                                        <span>Перейти на сайт</span>
+                                    </a>
+                                    <a href="" class="catalog-card__btn m-btn m-btn-primary-outline">
+                                        <span>Оставить отзыв</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="catalog-card__col4">
+                                <div class="catalog-card__tags">
+                                    <div class="catalog-card__tag">
+                                        <span>Есть пошив</span>
+                                    </div>
+                                    <div class="catalog-card__tag">
+                                        <span>Опт от 10 шт</span>
+                                    </div>
+                                    <div class="catalog-card__tag">
+                                        <span>Бесплатный макет</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="catalog-card">
+                            <div class="catalog-card__col1">
+
+                                <div class="catalog-card__adv">
+                                    <span>РЕКЛАМА</span>
+                                </div>
+
+
+                                <div class="catalog-card__img">
+                                    <img src="img/logo2.png" alt="">
+                                </div>
+                            </div>
+                            <div class="catalog-card__col2">
+                                <div class="catalog-card__title">
+                                    MOSCOW PRINT STUDIO
+                                </div>
+                                <div class="catalog-card__info _flex">
+                                    <div class="catalog-card__reviews _flex">
+                                        <div class="rating _flex">
+                                            <div class="text14 bold-text">
+                                                Рейтинг:
+                                            </div>
+                                            <img src="img/stars.svg" alt="" class="rating__stars">
+                                            <div class="text14 bold-text">
+                                                4,9
+                                            </div>
+                                        </div>
+                                        <div class="catalog-card__reviews-count">
+                                            <div class="text14 bold-text">
+                                                Отзывов: 102
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="catalog-card__status _flex">
+                                        <div class="status-item">
+                                            <img src="img/status.svg" alt="">
+                                            <span class="text12">Подтвержден</span>
+                                        </div>
+                                        <div class="status-item">
+                                            <img src="img/status2.svg" alt="">
+                                            <span class="text12">Проверен</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="catalog-card__text text">
+                                    <p>Мы печатаем оптом на одежде и текстиле с 2015-го года. Изготавливаем большие объемы продукции в сжатые сроки. У нас много опыта, слаженная команда и собственное печатное производство в Москве. Вам нужна корпоративная или спортивная форма, хотите сделать подарок? Поможем определиться с подходящим методом печати, подготовим макет принта, подберем нужные изделия под нанесение и, при необходимости, изготовим для вас образцы. Сделаем всю работу «под ключ».</p>
+                                    <p>
+                                        <b>Виды одежды:</b> футболки, толстовки, свитшоты, бейсболки, поло, ткани
+                                    </p>
+                                    <p>
+                                        <b>Виды печати:</b> шелкография, термоперенос, сублимация, прямая печать, тампопечать
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="catalog-card__col3">
+                                <div class="catalog-card__items">
+                                    <div class="catalog-card__item">
+                                        <div class="text12 bold-text">
+                                            Станция метро:
+                                        </div>
+                                        <div class="text12">
+                                            Коптево
+                                        </div>
+                                    </div>
+                                    <div class="catalog-card__item">
+                                        <div class="text12 bold-text">
+                                            Адрес:
+                                        </div>
+                                        <div class="text12">
+                                            Москва, Московская обл., Красногорский район, 26-й километр, бизнес-центр Riga Land, корп. 1 (главный офис)
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="catalog-card__nav">
+                                    <a href="" class="catalog-card__btn m-btn m-btn-primary">
+                                        <span>Перейти на сайт</span>
+                                    </a>
+                                    <a href="" class="catalog-card__btn m-btn m-btn-primary-outline">
+                                        <span>Оставить отзыв</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="catalog-card__col4">
+                                <div class="catalog-card__tags">
+                                    <div class="catalog-card__tag">
+                                        <span>Есть пошив</span>
+                                    </div>
+                                    <div class="catalog-card__tag">
+                                        <span>Опт от 10 шт</span>
+                                    </div>
+                                    <div class="catalog-card__tag">
+                                        <span>Бесплатный макет</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="main-slider slider">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="main-slider__img">
+                                        <img src="img/main-slide.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="main-slider__img">
+                                        <img src="img/main-slide.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="main-slider__img">
+                                        <img src="img/main-slide.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="main-slider__img">
+                                        <img src="img/main-slide.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="main__nav">
+                        <a href="" class="main__btn m-btn m-btn-primary">
+                            <span>Смотреть все</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info">
+                <div class="container">
+                    <div class="text30 text25-tablet bold-text">
+                        RaitingPrintMoscow.ru – рейтинг студий печати Москвы
+                    </div>
+                    <div class="text">
+                        <p>Портал RaitingPrintMoscow.ru помогает подобрать добросовестную студию печати на одежде и текстиле в Москве. В базе данных есть информация об услугах, актуальных ценах, расположению и режиме работы компаний. Рейтинг показывает, насколько довольны остались клиенты, и насколько ответственно специалисты выполнили заказ.</p>
+                        <ul>
+                            <li>С помощью таблицы можно расположить предложения по возрастанию цены и увидеть самые недорогие.</li>
+                            <li>Есть сортировка по специализации, можно выбрать те компании, которые печатают визитки, баннеры или листовки, работают с сувенирной продукцией.</li>
+                            <li>Отбор предложений по расположению типографии облегчит поиск ближайшей точки печати. Практически у любой станции метро и в любом районе можно найти, где напечатать продукцию.</li>
+                            <li>Отзывы от тех, кто уже обращался в конкретную типографию, помогут составить впечатление о том, какое в ней обслуживание и качество печати.</li>
+                            <li>Акции и скидки снизят цену заказа и сделают его более выгодным. Узнать о свежих предложениях можно</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="about-rating">
+                <div class="container">
+                    <div class="h2 text-center">
+                        О рейтинге
+                    </div>
+                    <div class="about-rating__items">
+                        <div class="rating-advantage">
+                            <div class="rating-advantage__icon">
+                                <img src="img/advantage-icon.svg" alt="">
+                            </div>
+                            <div class="rating-advantage__info">
+                                <div class="rating-advantage__title">
+                                    Актуально
+                                </div>
+                                <div class="rating-advantage__desc">
+                                    Рейтинг обновляется на основе отзывов "тайных покупателей"  и реальных клиентов
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="rating-advantage">
+                            <div class="rating-advantage__icon">
+                                <img src="img/advantage-icon2.svg" alt="">
+                            </div>
+                            <div class="rating-advantage__info">
+                                <div class="rating-advantage__title">
+                                    Честно
+                                </div>
+                                <div class="rating-advantage__desc">
+                                    Все отзывы мы проверяем на честность и достоверность, их нельзя "накрутить"
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="rating-advantage">
+                            <div class="rating-advantage__icon">
+                                <img src="img/advantage-icon3.svg" alt="">
+                            </div>
+                            <div class="rating-advantage__info">
+                                <div class="rating-advantage__title">
+                                    Удобно
+                                </div>
+                                <div class="rating-advantage__desc">
+                                    Вы можете узнать об особенностях работы сервисов и почитать честные отзывы
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="rating-advantage">
+                            <div class="rating-advantage__icon">
+                                <img src="img/advantage-icon4.svg" alt="">
+                            </div>
+                            <div class="rating-advantage__info">
+                                <div class="rating-advantage__title">
+                                    Независимо
+                                </div>
+                                <div class="rating-advantage__desc">
+                                    Наша миссия: показывать клиентам реальную картину и информировать о мошенниках
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__top">
+                    <div class="footer__col">
+                        <a href="" class="footer__logo logo">
+                            <img src="img/logo2.svg" alt="">
+                        </a>
+                        <div class="footer__c">
+                            <div class="text14">
+                                2024. Все права защищены
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__col">
+                        <div class="text16 bold-text">
+                            О проекте
+                        </div>
+                        <div class="footer__links">
+                            <a href="" class="footer__link">Методика проверки</a>
+                            <a href="" class="footer__link">Результаты проверок</a>
+                            <a href="" class="footer__link">Политика конфиденциальности</a>
+                            <a href="" class="footer__link">Пользовательское соглашение</a>
+                            <a href="" class="footer__link">Контакты</a>
+                        </div>
+                    </div>
+                    <div class="footer__col">
+                        <div class="text16 bold-text">
+                            Сотрудничество
+                        </div>
+                        <div class="footer__links">
+                            <a href="" class="footer__link">Добавить компанию</a>
+                            <a href="" class="footer__link">Реклама и продвижение</a>
+                        </div>
+                    </div>
+                    <div class="footer__col">
+                        <div class="text16 bold-text">
+                            Обратная связь
+                        </div>
+                        <div class="footer__links">
+                            <a href="" class="footer__link">Задать вопрос</a>
+                            <a href="" class="footer__link">Сообщить об ошибке</a>
+                            <a href="" class="footer__link">Отправить жалобу</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <div class="footer__info">
+                        <div class="text16 bold-text">
+                            Внимание!
+                        </div>
+                        <div class="footer__info-text">
+                            Вся информация на сайте носит ознакомительный характер. <br>
+                Администрация проекта не несет ответственности за личное мнение пользователей о каком-либо продукте.
+                        </div>
+                    </div>
+                    <div class="footer__contact">
+                        <div class="text12">
+                            Связь с редакцией:
+                        </div>
+                        <a href="" class="footer__contact-link">
+                            <span class="text12">@telegram</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+    </div>
+
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.min.js"></script>
+
+</body>
+
+</html>
