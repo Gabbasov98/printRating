@@ -77,7 +77,7 @@
                     <div class="filter">
                         <div class="filter__top">
                             <div class="filter__search fg">
-                                <input type="text" placeholder="Ваше имя">
+                                <input type="text" placeholder="Поиск по названию">
                                 <img src="img/search.svg" alt="" class="fg__icon">
                             </div>
                             <div class="sort">
@@ -122,7 +122,7 @@
                                     <div class="filter-item">
                                         <div class="filter-item__show">
                                             <div class="filter-item__title">
-                                                Выбрать услугу
+                                                Выбрать
                                             </div>
                                         </div>
                                         <div class="filter-item__hidden">
@@ -142,27 +142,23 @@
                                     </div>
                                 </div>
                                 <div class="filter-group">
-                                    <div class="filter-group__title">По станциям метро:</div>
-                                    <div class="filter-item">
-                                        <div class="filter-item__show">
-                                            <div class="filter-item__title">
-                                                Найти метро
-                                            </div>
-                                        </div>
-                                        <div class="filter-item__hidden">
-                                            <div class="filter-radio">
-                                                <input type="radio" checked data-id="metro1" data-value="Коптево" name="metro">
-                                                <label><span>Коптево</span></label>
-                                            </div>
-                                            <div class="filter-radio">
-                                                <input type="radio" data-id="metro2" data-value="Пушкинская" name="metro">
-                                                <label><span>Пушкинская</span></label>
-                                            </div>
-                                            <div class="filter-radio">
-                                                <input type="radio" data-id="metro3" data-value="Водный стадион" name="metro">
-                                                <label><span>Водный стадион</span></label>
-                                            </div>
-                                        </div>
+                                    <div class="filter-group__title">
+                                        По станциям метро:
+                                    </div>
+                                    <div class="filter-select">
+                                        <select id="search-select" class="demo-default search-select" placeholder="Поиск">
+                                            <option value=""></option>
+                                            <option data-id="1" value="Коптево">Коптево</option>
+                                            <option data-id="2" value="Пушкинская">Пушкинская</option>
+                                            <option data-id="3" value="Водный стадион">Водный стадион</option>
+                                            <option data-id="4" value="Коптево2">Коптево2</option>
+                                            <option data-id="5" value="Пушкинская2">Пушкинская2</option>
+                                            <option data-id="6" value="Водный стадион2">Водный стадион2</option>
+                                            <option data-id="7" value="Коптево3">Коптево3</option>
+                                            <option data-id="8" value="Пушкинская3">Пушкинская3</option>
+                                            <option data-id="9" value="Водный стадион3">Водный стадион3</option>
+                                            <option data-id="10" value="Коптево4">Коптево4</option>
+                                        </select>
                                     </div>
                                 </div>
                             </div>
@@ -545,10 +541,10 @@
                             </div>
                             <div class="rating-advantage__info">
                                 <div class="rating-advantage__title">
-                                    Актуально
+                                    Независимый
                                 </div>
                                 <div class="rating-advantage__desc">
-                                    Рейтинг обновляется на основе отзывов "тайных покупателей"  и реальных клиентов
+                                    Реальная и объективная оценка подрядчиков, чтобы вы могли сделать правильный выбор
                                 </div>
                             </div>
                         </div>
@@ -559,10 +555,10 @@
                             </div>
                             <div class="rating-advantage__info">
                                 <div class="rating-advantage__title">
-                                    Честно
+                                    Честный
                                 </div>
                                 <div class="rating-advantage__desc">
-                                    Все отзывы мы проверяем на честность и достоверность, их нельзя "накрутить"
+                                    Компании и отзывы мы проверяем на честность и достоверность, никаких накруток
                                 </div>
                             </div>
                         </div>
@@ -573,10 +569,10 @@
                             </div>
                             <div class="rating-advantage__info">
                                 <div class="rating-advantage__title">
-                                    Удобно
+                                    Актуальный
                                 </div>
                                 <div class="rating-advantage__desc">
-                                    Вы можете узнать об особенностях работы сервисов и почитать честные отзывы
+                                    Рейтинг обновляется на основе отзывов реальных клиентов и проверке тайным покупателем
                                 </div>
                             </div>
                         </div>
@@ -587,10 +583,10 @@
                             </div>
                             <div class="rating-advantage__info">
                                 <div class="rating-advantage__title">
-                                    Независимо
+                                    Удобный
                                 </div>
                                 <div class="rating-advantage__desc">
-                                    Наша миссия: показывать клиентам реальную картину и информировать о мошенниках
+                                    Информация представлена в одном месте, чтобы можно было выбрать без лишних проблем
                                 </div>
                             </div>
                         </div>
